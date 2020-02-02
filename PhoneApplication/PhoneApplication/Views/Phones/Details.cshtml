@@ -1,0 +1,58 @@
+﻿@model PhoneApplication.Models.Phone
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Phone</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Manufacturer.ManufacturerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manufacturer.ManufacturerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MSRP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MSRP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScreenSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScreenSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateReleased)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateReleased)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PhoneID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
